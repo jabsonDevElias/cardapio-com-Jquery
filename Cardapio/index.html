@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cardapio Pizzaria</title>
+</head>
+
+<body>
+
+    <header>
+       <div class="logo">
+
+       </div><!--logo-->
+        
+    </header>
+     
+    <div class="titulo">
+       <h1>Monte sua Pizza</h1>
+    </div>
+    
+    <section class="itens">
+        
+        <div class="container">
+            <div class="ingredientes">
+                <h2>Tamanho</h2>
+
+                <form action="">
+
+                    <div class="fatias">
+                        <div class="radio">
+                            <label >6 Fatias</label>
+                            <input type="radio" name="TamanhoPizza" id="check1" value='6 Fatias' checked>
+                            <label class='check' for="check1" id='fatias'></label>
+                        </div>
+        
+                        <div class="radio">
+                            <label >12 Fatias</label>
+                            <input type="radio" name="TamanhoPizza" id="check2" value='12 Fatias'>
+                            <label class='check' for="check2" id='fatias'></label>
+                        </div>
+        
+                        <div class="radio">
+                            <label >18 Fatias</label>
+                            <input type="radio" name="TamanhoPizza" id="check3" value='18 Fatias'>
+                            <label class='check' for="check3" id='fatias'></label>
+                        </div>
+                    </div>
+
+                    <h2>Sabor</h2>
+
+                    <div class="sabor">
+                        <select class="sabores-1">
+                            <option value="---">---</option>
+                            <option value="Frango">Frango</option>
+                            <option value="Calabreza">Calabresa</option>
+                            <option value="Camarão">Camarão</option>
+                            <option value="Mussarela">Mussarela</option>
+                            <option value="Carne">Carne</option>
+                        </select>
+
+                        <div class="radio">
+                            <label >Adicionar o segundo sabor?</label>
+                            <input type="checkbox"  id="outroSabor">
+                            <label class='check2' for="outroSabor"></label>
+                        </div>
+
+                        <select class="sabores-2" name="sabores-2" disabled>
+                            <option value="---">---</option>
+                            <option value="Frango">Frango</option>
+                            <option value="Calabreza">Calabresa</option>
+                            <option value="Camarão">Camarão</option>
+                            <option value="Mussarela">Mussarela</option>
+                            <option value="Carne">Carne</option>
+                        </select>
+                    </div>
+
+                    <h2>Bordas</h2>
+
+                    <div class="bordas">
+
+                        <div class="radio">
+                            <label >Adicionar Bordas?</label>
+                            <input type="checkbox" id="comBordas" value='Com Bordas'>
+                            <label class='check3' for="comBordas" ></label>
+                        </div>
+        
+
+
+                        <select class="sabores-borda" disabled>
+                            <option value="Sem Borda">Sem Borda</option>
+                            <option value="Chedeer">Chedeer</option>
+                            <option value="Catupiry">Catupiry</option>
+                        </select>
+
+                    </div>
+
+                </form>
+            </div>
+            
+            <div class="areatexto">
+    
+                <div class="pizzadoCliente">
+                   <textarea name="areaPedido" id="areaPedido" disabled></textarea>
+                   <div class="btn-1">
+                       <button>ADICIONAR</button>
+                   </div>
+                </div>
+
+            </div>            
+        </div>
+    </section>
+
+    
+        <div class="acoes">
+            <div class="alert">
+                <div class="fechar">
+                    <p>x</p>
+                </div>
+
+            </div>
+        </div>
+  
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
